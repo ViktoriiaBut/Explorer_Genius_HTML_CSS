@@ -1,0 +1,56 @@
+:root{
+    --color-brand:black; 
+}
+body{
+    --background-brand:  rgb(118, 118, 196);
+
+}
+
+/* Base */
+ul{
+    list-style-type: none;
+}
+
+h1{
+    border: 4px solid blueviolet;
+}
+
+.title{
+    color:brown;
+}
+.secondary-title{
+    color: chartreuse;
+    background-color: var(--background-brand);
+}
+.secondary-title .accent{
+    color: red;
+}
+
+/* [type]{
+    border: 4px solid blue;
+} */
+
+/* Button */
+.button-order{
+   border: 4px solid blue;
+   background-color: aquamarine;
+   border-radius: 8px;
+   cursor: pointer;
+}
+
+.button-order:hover{
+   background-color:white;
+}
+
+.button-order[disabled]{
+    border: 4px solid gray;
+}
+
+/* Sections */
+.main-section{
+    color: aqua;
+}
+.main-section > h1{
+    color: var(--color-brand);
+}
+
