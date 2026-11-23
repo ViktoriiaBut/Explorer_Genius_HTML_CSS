@@ -1,35 +1,138 @@
+@font-face {
+  font-display: swap; 
+  font-weight: 300;
+  src: url('../fonts/poppins-v24-latin-300.woff2') format('woff2'); 
+}
+@font-face {
+  font-display: swap; 
+  font-weight: 400;
+  src: url('../fonts/poppins-v24-latin-regular.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap;
+  font-weight: 600;
+  src: url('../fonts/poppins-v24-latin-600.woff2') format('woff2'); 
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 900;
+  src: url('../fonts/poppins-v24-latin-900.woff2') format('woff2'); 
+}
+
+
+
+
 :root{
     --color-brand:black; 
 }
 body{
     --background-brand:  rgb(118, 118, 196);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: bisque;
+}
+.section{
+    padding: 48px 0;
+}
+.container{
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
 
 }
-
+.header-nav{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+}
+.header-menu{
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+ justify-content: center;
+}
 /* Base */
 ul{
+    margin: 0;
+    padding: 0;
     list-style-type: none;
 }
 
-h1{
+h1, h2{
     border: 4px solid blueviolet;
+    text-shadow: 35px 5px 5px lightskyblue;
+    letter-spacing: 1.5px;
+text-align: center;
 }
-
+.bakery-menu{
+   text-decoration: none;
+   display: flex;
+   gap:20px;
+}
 .title{
     color:brown;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+.bakery-text::before,
+.bakery-text::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  background-color: #312261;
 }
 .secondary-title{
     color: chartreuse;
     background-color: var(--background-brand);
+    text-align: center;
 }
 .secondary-title .accent{
     color: red;
 }
-
+.bakery-img{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.tradition-text{
+    max-width: 500px;
+}
+.format-item {
+  flex-basis: calc((100% - 40px) / 2);
+}
+.format-card{
+    border: 1px solid lightgray;
+    border-radius: 16px;
+    background-color: whitesmoke;
+  padding: 24px;
+  background: linear-gradient(180deg,rgba(49,38,26,0)55%, rgba(49,38,26,0.71)72%, #312261 100%);
+  box-shadow: 2px 4px 2px 2px violet;
+}
 /* [type]{
     border: 4px solid blue;
 } */
+.link{
 
+}
+.link a{
+    color: var(--color-brand);
+    text-decoration: none;
+}
+.link a:hover{
+    color: blueviolet;
+}
 /* Button */
 .button-order{
    border: 4px solid blue;
@@ -53,4 +156,94 @@ h1{
 .main-section > h1{
     color: var(--color-brand);
 }
+/* Footer */
+.list-list a{
+    text-decoration: none;
+    }
+.list--cookery{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    color:brown;
+    font-size: 25px;
+    
+}
+.chef-image{
+    width: 300px;
+    height: 300px;
+    gap:20px;
+}
+.cookery-photo{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 4px 4px 4px 200px;
+}
+.cookery-photo img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    border-radius: inherit;
+    }
+.cookery-photo::before{
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: -16px;
+    width: 100%;
+  height: 100%;
+    box-sizing: border-box;
+    border: 1px solid #a18268;
+  border-radius: inherit;
+  z-index: 0;
+}
+.cookery-photo img {
+  position: relative;
+  z-index: 1;
+}
+.footer{
+    background-image: url('./img/footer-img.jpg');
+    background-size: cover;
+    min-height: 300px;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.courusel-button{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: transparent;
+}
+.courusel-button:hover{
+    background-color:#312261;
+    }
+.courusel-arrow{
+    fill:#312261;
+}
+.courusel-arrow:hover{
+    fill: white;
+}
+.title-welcome{
+   background-image: url('./img/istockphoto-511807820-2048x2048.jpg');
+   background-size:cover;
+    min-height: 250px;
+    background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.address-item{
+    fill: white;
 
+}
+.address-item :hover{
+    fill: burlywood;
+
+}

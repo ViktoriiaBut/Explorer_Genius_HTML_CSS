@@ -7,80 +7,117 @@
     <style>h1{background-color:pink;}
     </style>
     <link rel="stylesheet" href="./style.css"/>
-</head> 
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>  -->
 <body>
     <header>
-        <nav>
+        <div class="container">
+            <div class="header-container">
+        <nav class="header-nav">
             <a href="./index.html">
                 <img src="" alt="logo"/>
             </a>
-            <ul>
-                <li><a href="#tradition-section">Traditions</a></li>
-                <li><a href="#cooker-section">Cookers</a></li>
-                <li><a href="#Contacts-section">Contacts</a></li>
+            <ul class="header-menu">
+                <li class="link"><a href="#tradition-section">Traditions</a></li>
+                <li class="link"><a href="#cooker-section">Cookers</a></li>
+                <li class="link"><a href="#Contacts-section">Contacts</a></li>
             </ul>
-        </nav>
+        </nav> 
         <button class="button-order" type="button">Call back</button>
+        </div>
+        </div>  
     </header> 
     <main>
-        <section class="main-section">
-        <h1 >Our bakery</h1>
-                </section> 
         <section id="tradition-section">
-         <ul>
-            <li></li>  
-            <li></li>
-            <li></li>
-         </ul>
+            <div class="container">
+        
+        <h1 >Our bakery</h1>
+        <p class="bakery-text" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo tempore culpa, reprehenderit accusantium error id voluptatibus odit, dignissimos, repudiandae temporibus nobis. Rerum quisquam nam quis nihil facilis! Alias, eaque laboriosam.</p>
+        
          <h2 class="secondary-title"><span class="accent">Super</span> cookers</h2>
-            <img src="#" alt=""> 
-            <li>
-                <articale>
+        <div class="bakery-img">
+            <img src="./img/f2bff52ac3534b2f9ee422552257eb9c-goods.avif" alt="loaf of bread" width="400" height="420">
+            <p class="tradition-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo tempore culpa, reprehenderit accusantium error id voluptatibus odit, dignissimos, repudiandae temporibus nobis. Rerum quisquam nam quis nihil facilis! Alias, eaque laboriosam.</p>
+        </div>
+        <div class="bakery-container">
+            <button class="courusel-button" type="button">
+            <svg class="courusel-arrow" width="16" height="16">
+                <use href="./img/sprite.svg#icon-circle-left"></use>
+            </svg>
+            </button>
+        <ul class="bakery-menu"> 
+            <li class="format-item">
+                <article class="format-card">
                     <h3 class="title">Walrus</h3>
-                </articale>  
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eius ullam numquam dolor quam, laboriosam natus eos eveniet, doloremque illum exercitationem. Incidunt error officiis aspernatur quis dolore? Dolor, voluptas et.</p>
+                </article>  
+            </li>
+            <li class="format-item">
+                <article class="format-card">
+                    <h3 class="title">Horseshoe</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eius ullam numquam dolor quam, laboriosam natus eos eveniet, doloremque illum exercitationem. Incidunt error officiis aspernatur quis dolore? Dolor, voluptas et.</p>
+                </article>
+            </li> 
+            <li class="format-item">
+                <article class="format-card">
+                    <h3 class="title">Hendlebar</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eius ullam numquam dolor quam, laboriosam natus eos eveniet, doloremque illum exercitationem. Incidunt error officiis aspernatur quis dolore? Dolor, voluptas et.</p>
+                </article>
+            </li>  
+                    <button class="courusel-button" type="button">
+            <svg class="courusel-arrow" width="16" height="16">
+                <use href="./img/sprite.svg#icon-circle-left"></use>
+            </svg>    
+         </ul>
+        </div> 
+        </div>
+        </section>
+        <section clas="coker-section">
+             <div class="container">
+            <h2 class="title-welcome" style="color:blue">Welcome to our bakery</h2>
+            <ul class="list--cookery">
+            <li> 
+                <article>
+                    <div class="cookery-photo">
+                    <img class="chef-image" src="./img/Mike.jpg" alt="chef">
+                    </div>
+                    <h3>Mike</h3> 
+                    <p>Mike bakes bread and croassants</p>
+                    </article>
             </li>
             <li>
-                <articale>
-                    <h3>Horseshoe</h3>
-                </articale>
+                <article> 
+                    <div class="cookery-photo">
+                    <img class="chef-image" src="./img/Olga.jpg" alt="chef">
+                    </div>
+                    <h3>Olga</h3>
+                    <p>Mike bakes bread and croassants</p>
+                </article>
             </li>
             <li>
-                <articale>
-                    <h3>Hendlebar</h3>
-                </articale>
+                <article>
+                    <div class="cookery-photo">
+                    <img class="chef-image" src="./img/Raya.jpg" alt="chef">
+                    </div>
+                    <h3>Raya</h3> 
+                    <p>Mike bakes bread and croassants</p>
+                </article>
             </li>
          </ul>
-         
-
+         </div>
         </section>
-        <section id="cooker-section">
-            <h2 style="color:blue">Welcome to our bakery</h2>
-            <ul>
-            <li>
-                <articale>
-                    <h3></h3>
-                </articale>
-            </li>
-            <li>
-                <articale>
-                    <h3></h3>
-                </articale>
-            </li>
-            <li>
-                <articale>
-                    <h3></h3>
-                </articale>
-            </li>
-         </ul>
-        </section>
-        <section id="Contacts-section"></section>
+        
     </main>
-    <footer>
+    <footer class="footer">
+        <div class="container">
                 <nav>
             <a href="./index.html">
                 <img src="" alt="logo"/>
             </a>
-            <ul>
+            <ul class="list-list">
                 <li><a href="#tradition-section">Traditions</a></li>
                 <li><a href="#cooker-section">Cookers</a></li>
                 <li><a href="#Contacts-section">Contacts</a></li>
@@ -90,10 +127,20 @@
                 <li><a href="tel:+4400007777">+44 00007777</a></li>
                 <li><a href="mailto:zzz@gmai.com">zzz@gmai.com</a></li>
                 <li><a href="https://www.google.com/maps" target="_blank">Pickering</a></li>
+                <li><a href="">
+                    <svg class="address-item" width="32" height="32">
+                        <use href="./img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                </a></li>
+                <li><a href=""></a>
+                    <svg class="address-item" width="32" height="32">
+                        <use href="./img/sprite.svg#icon-instagram"></use>
+                    </svg></li>
             </ul>
          </address>
         </nav>
         <p>&copy:</p>
+        </div>
     </footer>
 </body>
 </html>
